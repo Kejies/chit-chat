@@ -1,0 +1,371 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.header{
+    display: grid;
+    grid-template-columns: 30% 50% 20%;
+}
+.sidebar{
+    color: white;
+    background-color: #0D082C;
+}
+.sidebar-header{
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 32px;
+}
+.sidebar-header h2{
+    padding-top: 30px;
+}
+.sidebar-header img{
+    margin-left: 15px;
+    margin-top: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.button{
+    font-size: 20px;
+    padding-top: 30px;
+    padding-right: 15px;
+}
+.status-btn{
+    padding-right: 5px;
+}
+.container{
+    height: 100vh;
+    background-image: url('../../slicing2/img/xo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.container-header{
+    height: 83px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #11112e;
+    color: white;
+}
+.top-bar input{
+    margin-top: 15px;
+    padding: 10px;
+    color: white;
+    background-color: #31316d;
+    margin-left: 5%;
+    margin-right: 15px;
+    width: 80%;
+    height: 20px;
+    border-radius: 10px;
+    border: none;
+    font-size: 18px;
+}
+.top-bar input:focus {
+    outline: none;
+    border: none;
+}
+.second-bar{
+    display: flex;
+    padding: 15px 25px;
+    padding-top: 25px;
+}
+.second-bar h3{
+    padding-left: 25px;
+}
+.profile{
+    display: flex;
+    padding: 10px;
+}
+.verif{
+    font-size: 17px;
+    color: rgb(6, 138, 247);
+}
+.badge-note{
+    margin-top: 5px;
+    color: #6f6f74;
+}
+.status{
+    padding: 10px;
+}
+.profile img{
+    margin-top: 5px;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+}
+.other-header{
+    display: flex;
+    padding: 30px;
+}
+.search{
+    margin-right: 30px;
+}
+.container-content{
+    position: relative;
+    color: white;
+}
+.chat-box{
+    position: relative;
+    font-size: 18px;
+    height: auto;
+    border-radius: 25px;
+    padding: 10px;
+    padding-left: 25px;
+    margin-left: 68%;
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #18181d;
+}
+.chat-box-left{
+    position: relative;
+    font-size: 18px;
+    height: auto;
+    border-radius: 25px;
+    padding: 10px;
+    padding-left: 25px;
+    margin-right: 75%;
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    background-color: #18181d;
+}
+.chat-box p{
+    padding-right: 5px;
+}
+.chat-box .attach{
+    position: absolute;
+    display: inline-block;
+    padding-bottom: 0px;
+    margin-top: 5px;
+    bottom: 0;
+    right: 0;
+    font-size: 12px;
+    padding-right: 10px;
+    padding-bottom: 3px;
+}
+.chat-box-left .attach-left{
+    display: block;
+    position: absolute;
+    padding-bottom: 0px;
+    margin-top: 5px;
+    bottom: 0;
+    padding-bottom: 3px;
+    right: 0;
+    padding-right: 15px;
+    font-size: 12px;
+}
+.check-box{
+    color: rgb(8, 159, 247);
+}
+.msg-box{
+    position: fixed;
+    background-color: #11112e;
+    color: white;
+    bottom: 0;
+    width: 48.5%;
+    padding: 15px;
+}
+.msg-box input{
+    padding: 10px;
+    color: white;
+    background-color: #31316d;
+    width: 85%;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    font-size: 18px;
+}
+.msg-box input:focus {
+    outline: none;
+    border: none;
+}
+.emote-box{
+    font-size: 25px;
+    color: yellow;
+}
+.clip-box{
+    padding-left: 10px;
+    padding-right: 5px;
+    font-size: 30px;
+}
+.microphone-box{
+    margin-top: 10px;
+    padding-left: 10px;
+    font-size: 25px;
+}
+.content-preview{
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 15px;
+    margin-top: 10px;
+    transition: .3s;
+}
+.content-preview img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    padding: 10px;
+}
+.preview-header{
+    display: flex;
+}
+.content-header h2{
+    margin-top: 15px;
+    font-size: 18px;
+}
+.content-header{
+    padding-left: 5px;
+}
+.content-header span{
+    color: #a6a6b9;
+}
+.content-header .hr{
+    position: absolute;
+    width: 25%;
+    height: 1px;
+    background-color: #31316d;
+    margin-top: 19px;
+}
+.verif-preview{
+    font-size: 15px;
+    color: rgb(6, 138, 247);
+}
+.badge-bot{
+    padding: 5px;
+    font-size: 8px;
+    background-color: blue;
+    border-radius: 50%;
+}
+.pined{
+    margin-left: 15px;
+    font-size: 12px;
+    transform:rotate(35deg);
+}
+.time{
+    margin-top: 25px;
+}
+.content-preview:hover{
+    background-color: #31316d;
+}
+.active{
+    background-color: #23234b;
+}
+.online-users{
+    background-color: #0D082C;
+}
+.title{
+    height: 100px;
+    color: #31316d;
+    padding-top: 15px;
+    text-align: center;
+    padding-bottom: 50px;
+}
+.title h2{
+    color: white;
+}
+.title .online{
+    padding-top: 20px;
+    padding-bottom: 15px;
+    padding-left: 5%;
+    text-align: start;
+}
+.title input{
+    margin-top: 15px;
+    padding: 10px;
+    color: white;
+    background-color: #31316d;
+    margin-left: 5%;
+    margin-right: 15px;
+    width: 80%;
+    height: 15px;
+    border-radius: 10px;
+    border: none;
+    font-size: 18px;
+}
+.title input:focus {
+    outline: none;
+    border: none;
+}
+.user{
+    display: flex;
+    justify-content: space-between;
+}
+.user:hover{
+    background-color: #31316d;
+}
+.user-header img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    padding: 15px;
+}
+.user-header{
+    display: flex;
+}
+.user-detail{
+    color: white;
+    padding-top: 12px;
+}
+.user-detail span{
+    font-size: 12.5px;
+}
+.other-icon{
+    padding-top: 30px;
+    padding-right: 10px;
+}
+.other-icon a{
+    color: white;
+}
+.comment{
+    padding: 8px;
+    margin-right: 5px;
+    font-size: 15px;
+    border-radius: 50%;
+}
+.comment:hover{
+    background-color: #23234b;
+}
+.other-badge{
+    padding: 8px;
+    font-size: 15px;
+}
+.other-badge:hover{
+    border-radius: 50%;
+    background-color: #23234b;
+}
+.line-break{
+    position: relative;
+    width: 100%;
+    height: 1px;
+    background-color: #31316d;
+}
+.line-break-user{
+    position: relative;
+    width: 85%;
+    margin-left: 10%;
+    height: 1px;
+    background-color: #31316d;
+}
+.title-offline{
+    height: 100px;
+    color: #31316d;
+    padding-top: 15px;
+    text-align: center;
+    padding-bottom: 50px;
+}
+.title-offline{
+    margin-top: 25px;
+    padding-top: 20px;
+    padding-bottom: 0;
+}
+.title-offline h3{
+    padding-top: 20px;
+    padding-bottom: 15px;
+    padding-left: 5%;
+    text-align: start;
+}
